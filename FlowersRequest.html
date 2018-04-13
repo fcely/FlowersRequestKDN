@@ -1,0 +1,189 @@
+<html>
+
+<head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="moment/jquery_3.1.3_google.js"></script>
+        <script src="https://momentjs.com/downloads/moment.js"></script>
+
+</head>
+
+
+<body class="container">
+
+
+    
+                <h1>Formato De Solicitud De Flor Kendal North</h1>          
+              
+
+              <div  Class="row bg-success text-white mb-4"> Nueva Solicitud </div>
+
+
+              <form id="inputform">
+                      
+                         
+                <div class="form-group row">
+                        <label class="col-sm-1 col-form-label" for="producto"><b>Producto</b></label>
+      
+
+                        <select class="custom-select col-sm-4" id="producto">
+                        <option selected>Choose...</option>                      
+                        <option value="Acacia">Acacia</option>
+                        <option value="Alstroemeria">Alstroemeria</option>
+                        <option value="Asiatic Lilies">Asiatic Lilies</option>
+                        <option value="Button">Button</option>
+                        <option value="Carnation">Carnation</option>
+                        <option value="CDN">CDN</option>
+                        <option value="Cremon">Cremon</option>
+                        <option value="Curly Willow">Curly Willow</option>
+                        <option value="Cushion">Cushion</option>
+                        <option value="Daisy">Daisy</option>
+                        <option value="Dianthus">Dianthus</option>
+                        <option value="Eucalyptus">Eucalyptus</option>
+                        <option value="Gerbera">Gerbera</option>
+                        <option value="Green Ball">Green Ball</option>
+                        <option value="Green Mist">Green Mist</option>
+                        <option value="Gypso">Gypso</option>
+                        <option value="Honey Bracelet">Honey Bracelet</option>
+                        <option value="Hydrangeas">Hydrangeas</option>
+                        <option value="Hypericum">Hypericum</option>
+                        <option value="Iris">Iris</option>
+                        <option value="Kale">Kale</option>
+                        <option value="Leather Leaf">Leather Leaf</option>
+                        <option value="Liatris">Liatris</option>
+                        <option value="Matsumoto">Matsumoto</option>
+                        <option value="Millet">Millet</option>
+                        <option value="Minicarnation">Minicarnation</option>
+                        <option value="Minikalas">Minikalas</option>
+                        <option value="Myrtle">Myrtle</option>
+                        <option value="Novelty">Novelty</option>
+                        <option value="Oriental Lilies">Oriental Lilies</option>
+                        <option value="Pittosporum">Pittosporum</option>
+                        <option value="Protea">Protea</option>
+                        <option value="Rose - Color">Rose - Color</option>
+                        <option value="Rose - Red">Rose - Red</option>
+                        <option value="Rose - Spray">Rose - Spray</option>
+                        <option value="Ruscus">Ruscus</option>
+                        <option value="Safflower">Safflower</option>
+                        <option value="Salal">Salal</option>
+                        <option value="Snapdragon">Snapdragon</option>
+                        <option value="Solidago">Solidago</option>
+                        <option value="Spider">Spider</option>
+                        <option value="Star of Bethlehem">Star of Bethlehem</option>
+                        <option value="Statice">Statice</option>
+                        <option value="Sunflowers">Sunflowers</option>
+                        <option value="Ti Leaves">Ti Leaves</option>
+                        </select>
+
+                  
+               
+                     <label class="col-sm-1 col-form-label" for="color"><b>Color</b></label>
+                     
+                      <select class="custom-select col-sm-4" id="color">
+                      <option selected>Choose...</option>
+                      <option value="Assorted">Assorted</option>
+                      <option value="Bicolor">Bicolor</option>
+                      <option value="Blue">Blue</option>
+                      <option value="Bright Orange">Bright Orange</option>
+                      <option value="Brown">Brown</option>
+                      <option value="Dark Bronze">Dark Bronze</option>
+                      <option value="DarkPink">DarkPink</option>
+                      <option value="Green">Green</option>
+                      <option value="Lavender">Lavender</option>
+                      <option value="Medium Bronze">Medium Bronze</option>
+                      <option value="Neón Cherry">Neón Cherry</option>
+                      <option value="Novelty Purple">Novelty Purple</option>
+                      <option value="Orange">Orange</option>
+                      <option value="Pink">Pink</option>
+                      <option value="Purple">Purple</option>
+                      <option value="Rainbow Cold">Rainbow Cold</option>
+                      <option value="Rainbow Hot">Rainbow Hot</option>
+                      <option value="Red">Red</option>
+                      <option value="Tinted Dark Pink">Tinted Dark Pink</option>
+                      <option value="Tinted Pink Pastel">Tinted Pink Pastel</option>
+                      <option value="Tinted Purple">Tinted Purple</option>
+                      <option value="White">White</option>
+                      <option value="Yellow">Yellow</option>
+                      </select>
+                                                     
+
+                </div>
+        
+  
+                <div class="form-group row">
+                      <label  class="col-sm-1 col-form-label" for="grado"><b> Grado </b></label>
+                      <input type="text" class=" col-sm-4 form-control" id="grado" aria-describedby="gradoHelp" placeholder="Grado" >            
+                
+                       <label class="col-sm-1 col-form-label" for="tallos"><b>Tallos</b></label>
+                       <input type="number" min="0" class=" col-sm-4 form-control" id="tallos" aria-describedby="tallosHelp" placeholder="Tallos" >                         
+                </div>
+  
+                                
+                <div class="form-group row">
+                        <label class="col-sm-1 col-form-label" for="batch#"><b>Batch</b></label>
+                        <input type="number" min="0" class=" col-sm-4 form-control" id="batch" aria-describedby="batchHelp" placeholder=" Batch id#" >      
+               
+                  
+                    <label  class="col-sm-1 col-form-label" for="linea"><b>Linea</b></label>
+                
+               
+                     <select class="custom-select col-sm-4" id="linea">
+                     <option selected>Choose...</option>
+                     <option value="Mecaflor1">Mecaflor1</option>
+                     <option value="Mecaflor2">Mecaflor2</option>
+                     <option value="Mecaflor3">Mecaflor3</option>
+                     <option value="Mecaflor3">Linea1</option>
+                     <option value="Mecaflor3">Linea2</option>
+                     <option value="Mecaflor3">Amazon</option>
+                     <option value="Arrangements">Arrangements</option>
+                     </select>      
+                 
+               
+                 
+                </div>                              
+              
+                <button type="submit" class="btn btn-success mt-2 " id="submit">Submit</button>
+                 
+              </form>
+
+            
+        
+ 
+
+<div  Class="row bg-success text-white"> Solicitudes Pendientes </div>
+
+              <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">Wait_Time</th>  
+                  <th scope="col">Linea</th>          
+                  <th scope="col">Producto</th>
+                  <th scope="col">Color </th>
+                  <th scope="col">Grado/Spec</th>
+                  <th scope="col">Tallos</th>
+                  <th scope="col">Batch</th>
+                  <th scope="col">Cooler</th>
+                  <th scope="col">Production</th>
+                </tr>
+              </thead>
+              <tbody class="info">
+                
+              
+              </tbody>
+            </table>
+
+
+            
+                </body>
+
+
+</html>
+
+
+<style>
+
+
+
+
+</style>
